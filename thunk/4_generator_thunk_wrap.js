@@ -22,4 +22,5 @@ var gen = function*(){
 	var f4 = yield readFile('./thunk.js');	
 }
 
+//yield {value:readFile()返回值,done:}
 run(gen);

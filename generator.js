@@ -1,3 +1,4 @@
+//1
 function *enumerable(msg){
 	console.log(msg);
 	var msg1 = yield  msg + ' after';
