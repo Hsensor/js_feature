@@ -17,9 +17,13 @@ function run(fn){
 
 var gen = function*(){
 	var f1 = yield readFile('./fetch_generator.js');
+	console.log(f1);
 	var f2 = yield readFile('./generator.js');
+	console.log(f2);
 	var f3 = yield readFile('./README.md');
-	var f4 = yield readFile('./thunk.js');	
+	console.log(f3);
+	var f4 = yield readFile('./thunk.js');
+	console.log(f4);	
 }
 
 //yield {value:readFile()返回值,done:}

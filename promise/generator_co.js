@@ -9,6 +9,7 @@ var  gen = function*(){
 }
 
 co(gen).then(function(){
+  console.log(arguments);
 	console.log('Generator 函数执行完成');
 })
 

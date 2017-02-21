@@ -11,8 +11,10 @@ var readFile = function(filename){
 var gen = function*(){
 	var f1 = yield readFile("./generator_co.js");
 	var f2 = yield readFile("./generator_co.js");
-	console.log(f1.toString());
-	console.log(f2.toString());
+	console.log("***");
+	console.log("~~~~");
+	var f2 = yield readFile("./generator_co.js");
+	console.log("f2",f2.toString());
 }
 /*
 手动执行
