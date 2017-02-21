@@ -16,7 +16,7 @@ var  gen = function*(a){
 
   //console.log(f1.toString());
   //console.log(f2.toString());
-  return a;
+  return a;//最后一个ret = gen.next();ret.value  
 }
 
 co(gen,{"age":28,name:"xulu"}).then(function(){
