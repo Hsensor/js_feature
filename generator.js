@@ -13,6 +13,7 @@ function *enumerable(msg){
 		console.log(e);
 	}
 	console.log(msg3+' over');
+	return 123;
 }
 
 var enummerator =  enumerable("hello");
@@ -25,4 +26,5 @@ console.log(ret);
 ret = enummerator.next(ret.value);
 console.log(ret);
 
-enummerator.next();
+ret = enummerator.next("msg3");
+console.log(ret);
